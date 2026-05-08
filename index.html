@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヒトキワ LP一覧</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP',sans-serif;background:#f0f4f8;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:40px 20px}
+.wrap{max-width:600px;width:100%;text-align:center}
+h1{font-size:24px;font-weight:700;color:#0a2463;margin-bottom:8px}
+p{font-size:14px;color:#666;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#fff;border-radius:16px;padding:32px 24px;box-shadow:0 4px 20px rgba(0,0,0,0.08);text-decoration:none;transition:transform .2s,box-shadow .2s;display:block}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(0,0,0,0.12)}
+.card-label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.card-title{font-size:18px;font-weight:700;margin-bottom:8px}
+.card-desc{font-size:13px;color:#666;line-height:1.6}
+.card-a .card-label{color:#1e56c8}
+.card-a .card-title{color:#0a2463}
+.card-b .card-label{color:#2e9e5b}
+.card-b .card-title{color:#0a3c1e}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>HITOKIWA LP</h1>
+  <p>技人国ビザ人材紹介サービス　ランディングページ</p>
+  <div class="cards">
+    <a class="card card-a" href="lp-a-cost.html">
+      <div class="card-label">LP-A</div>
+      <div class="card-title">コスト訴求型</div>
+      <div class="card-desc">採用コスト完全無料を全面に押し出したLP</div>
+    </a>
+    <a class="card card-b" href="lp-b-anxiety.html">
+      <div class="card-label">LP-B</div>
+      <div class="card-title">不安解消型</div>
+      <div class="card-desc">外国人採用の不安を解決するコンセプトのLP</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>

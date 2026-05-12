@@ -298,6 +298,71 @@ header{
   font-size:12px;font-weight:700;padding:8px 12px;text-align:center;
 }
 
+/* ===== NATIONALITY (パターン1：紹介シート風) ===== */
+.nationality-section{
+  padding:80px 48px;
+  background:#f8f9fb;
+}
+.nationality-inner{max-width:1100px;margin:0 auto}
+.nationality-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:44px;
+}
+.nationality-card{
+  border:1px solid #e4e7ef;
+  border-radius:5px;
+  overflow:hidden;
+  box-shadow:0 1px 4px rgba(0,0,0,0.04);
+}
+.nc-head{
+  padding:20px 22px 16px;
+  border-bottom:1px solid #e4e7ef;
+}
+.nationality-card:nth-child(1) .nc-head{background:#f7f8fa}
+.nationality-card:nth-child(2) .nc-head{background:#f5f7fa}
+.nationality-card:nth-child(3) .nc-head{background:#f7f8fa}
+.nationality-card:nth-child(4) .nc-head{background:#f5f7fa}
+.nc-flag-row{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:8px;
+}
+.nc-flag{
+  width:40px;height:26px;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:2px;overflow:hidden;
+  background:#ebebeb;flex-shrink:0;
+}
+.nc-flag img{width:100%;height:100%;object-fit:cover;display:block}
+.nc-flag.nepal img{object-fit:contain}
+.nc-name{
+  font-size:20px;font-weight:900;
+  color:var(--navy);line-height:1.15;
+}
+.nc-subtitle{
+  font-size:12px;color:var(--text2);
+  font-weight:500;line-height:1.6;
+}
+.nc-body-area{
+  padding:20px 22px;
+  background:#fff;
+}
+.nc-body{
+  font-size:13px;color:var(--text2);
+  line-height:1.88;margin-bottom:14px;
+}
+.nc-tags{
+  padding-top:12px;
+  border-top:1px solid #eaecf2;
+  font-size:12px;color:var(--text2);
+  font-weight:600;letter-spacing:0.02em;
+}
+@media(max-width:768px){
+  .nationality-section{padding:56px 20px}
+  .nationality-grid{grid-template-columns:1fr}
+}
+
 /* ===== FLOW ===== */
 .flow{
   padding:80px 48px;
@@ -755,6 +820,88 @@ footer{background:var(--navy);padding:40px 48px;text-align:center}
       <div class="interview-img reveal-right">
         <img src="./assets/images/candidate-interview.png" alt="採用面接のサポートシーン" loading="lazy">
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- NATIONALITY -->
+<section class="nationality-section" id="nationality">
+  <div class="nationality-inner">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label">国籍ごとの特徴</div>
+      <h2 class="section-title">ご紹介できる人材の国籍と特徴</h2>
+      <p class="section-sub">ヒトキワでは、ベトナム・ミャンマー・スリランカ・ネパールなど、さまざまな国籍の人材をご紹介しています。国籍ごとの傾向を理解したうえで、企業様の職場に合う人材をご提案します。</p>
+    </div>
+    <div class="nationality-grid">
+
+      <!-- ベトナム -->
+      <div class="nationality-card reveal">
+        <div class="nc-head">
+          <div class="nc-flag-row">
+            <div class="nc-flag">
+              <img src="./assets/images/flag-vietnam.png" alt="ベトナム国旗" loading="lazy">
+            </div>
+            <div class="nc-name">ベトナム</div>
+          </div>
+          <div class="nc-subtitle">製造・外食・宿泊でご相談が多い人材</div>
+        </div>
+        <div class="nc-body-area">
+          <p class="nc-body">真面目で手先が器用な方が多く、製造業・外食・宿泊など幅広い業種で活躍しています。日本での就労経験や学習経験がある人材も多く、仕事のルールや職場の流れを理解しながら成長していける点が強みです。コツコツと作業に取り組む仕事や、チームで協力しながら進める現場にも向いています。</p>
+          <div class="nc-tags">製造 ／ 外食 ／ 宿泊</div>
+        </div>
+      </div>
+
+      <!-- ミャンマー -->
+      <div class="nationality-card reveal" style="transition-delay:0.08s">
+        <div class="nc-head">
+          <div class="nc-flag-row">
+            <div class="nc-flag">
+              <img src="./assets/images/flag-myanmar.png" alt="ミャンマー国旗" loading="lazy">
+            </div>
+            <div class="nc-name">ミャンマー</div>
+          </div>
+          <div class="nc-subtitle">丁寧な教育と相性が良い人材</div>
+        </div>
+        <div class="nc-body-area">
+          <p class="nc-body">穏やかで協調性のある方が多く、職場の人間関係を大切にしながら働ける人材が多い傾向があります。介護・外食・宿泊など、人との関わりが多い仕事にも向いており、素直に学ぶ姿勢があるため入社後の教育との相性も良いです。丁寧に教えることで、長く安定して活躍してくれることが期待できます。</p>
+          <div class="nc-tags">介護 ／ 外食 ／ 宿泊</div>
+        </div>
+      </div>
+
+      <!-- スリランカ -->
+      <div class="nationality-card reveal" style="transition-delay:0.16s">
+        <div class="nc-head">
+          <div class="nc-flag-row">
+            <div class="nc-flag">
+              <img src="./assets/images/flag-sri-lanka.png" alt="スリランカ国旗" loading="lazy">
+            </div>
+            <div class="nc-name">スリランカ</div>
+          </div>
+          <div class="nc-subtitle">接客や宿泊分野でも相談が多い人材</div>
+        </div>
+        <div class="nc-body-area">
+          <p class="nc-body">明るくコミュニケーション力のある方が多く、英語力を持つ人材もいるため、接客やチーム内でのやり取りに強みがあります。ホテル・外食・製造など幅広い職種で活躍が期待でき、前向きに仕事を覚えようとする姿勢を持つ方も多いです。日本語力や経験に合わせて、職場に合う人材をご提案します。</p>
+          <div class="nc-tags">宿泊 ／ 外食 ／ 製造</div>
+        </div>
+      </div>
+
+      <!-- ネパール -->
+      <div class="nationality-card reveal" style="transition-delay:0.24s">
+        <div class="nc-head">
+          <div class="nc-flag-row">
+            <div class="nc-flag nepal">
+              <img src="./assets/images/flag-nepal.png" alt="ネパール国旗" loading="lazy">
+            </div>
+            <div class="nc-name">ネパール</div>
+          </div>
+          <div class="nc-subtitle">日本での生活経験を活かしやすい人材</div>
+        </div>
+        <div class="nc-body-area">
+          <p class="nc-body">日本で学んだ経験がある方も多く、飲食・宿泊・介護などの現場で活躍しやすい傾向があります。人柄が柔らかく、接客やチームワークを大切にする方が多いため、職場になじみやすい点も特徴です。日本語学校やアルバイト経験を通じて、日本の生活や仕事に慣れている人材もご紹介できます。</p>
+          <div class="nc-tags">飲食 ／ 宿泊 ／ 介護</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
